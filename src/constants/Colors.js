@@ -13,5 +13,7 @@ export default {
   black: 'black',
   BLUE_BKY: '#004F94',
   ORANGE_BKY: '#FD7B03',
-  orange: '#FF9800'
+  orange: '#FF9800',
+  WHITE_BKY: '#FFFFFF',
+  MEDIUMGRAY_BKY: '#BAB6B6'
 }

@@ -4,21 +4,15 @@ import Colors from '../../constants/Colors'
 
 const styles = StyleSheet.create({
   container: {
-    paddingTop: 40,
     flex: 1,
     backgroundColor: Colors.greyCustom,
     alignItems: 'center',
-    justifyContent: 'flex-start'
-  },
-  logo: {
-    fontWeight: 'bold',
-    fontSize: 50,
-    color: Colors.softRed,
-    marginBottom: 40
+    justifyContent: 'flex-start',
+    paddingTop: 40
   },
   inputView: {
     width: '80%',
-    backgroundColor: Colors.blue,
+    backgroundColor: Colors.green,
     borderRadius: 25,
     height: 50,
     marginBottom: 20,
@@ -29,32 +23,30 @@ const styles = StyleSheet.create({
     height: 50,
     color: Colors.white
   },
-  forgot: {
-    color: Colors.black,
-    fontSize: 15
-  },
-  loginBtn: {
+  /* signupBtn: {
     width: '80%',
-    backgroundColor: Colors.ORANGE_BKY,
+    backgroundColor: Colors.black,
     borderRadius: 25,
     height: 50,
     alignItems: 'center',
     justifyContent: 'center',
     marginTop: 40,
-    marginBottom: 30
-  },
-  loginText: {
-    color: Colors.white
-  },
-  optsText: {
-    color: Colors.black,
-    fontSize: 15
-  },
-  tinyLogo: {
-    paddingBottom: 20,
+    marginBottom: 10
+  }, */
+  signupBtn: {
+    width: '80%', 
+    height: 50, 
+    backgroundColor: Colors.ORANGE_BKY,
+    justifyContent: 'center', 
+    alignItems: 'center',
+    position: 'absolute',
+    marginTop: 40,
     marginBottom: 30,
-    width: 200,
-    height: 200,
+    borderRadius: 25,
+    bottom: 10
+  },
+  signupText: {
+    color: Colors.white
   }
 })
 

@@ -4,7 +4,8 @@ import {
   View,
   TextInput,
   TouchableOpacity,
-  Alert
+  Alert,
+  Image
 } from 'react-native'
 
 import { Context } from '../../store'
@@ -58,6 +59,10 @@ const Login = (props) => {
       )
     }
   }
+
+  handleSignUp = () => {
+    props.navigation.navigate('SignUp')
+  }
   
   return (
     <View style={styles.container}>
@@ -66,7 +71,10 @@ const Login = (props) => {
         textContent={'Cargando...'}
         textStyle={styles.spinnerTextStyle}
       />
-      <Text style={styles.logo}>Template</Text>
+      <Image
+        style={styles.tinyLogo}
+        source={require('../../../assets/logo.png')}
+      />
       <View style={styles.inputView}>
         <TextInput
           style={styles.inputText}
@@ -90,6 +98,9 @@ const Login = (props) => {
         onPress={handleLogin}
       >
         <Text style={styles.loginText}>Iniciar</Text>
+      </TouchableOpacity>
+      <TouchableOpacity onPress={handleSignUp}>
+        <Text style={styles.optsText}>Registrar</Text>
       </TouchableOpacity>
     </View>
   )

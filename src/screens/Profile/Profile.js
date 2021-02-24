@@ -8,6 +8,8 @@ import {
 } from 'react-native'
 
 import MenuIcon from '../../components/MenuIcon/MenuIcon'
+import ProfileHeader from '../../components/Profile/ProfileHeader'
+import ProfileSocialMedia from '../../components/Profile/ProfileSocialMedia'
 import styles from './styles'
 
 const Profile = (props) => {
@@ -20,13 +22,30 @@ const Profile = (props) => {
   });
 
   return (
-    <View style={styles.centered}>
-      <Text
-        lightColor="rgba(0,0,0,0.8)"
-        darkColor="rgba(255,255,255,0.8)"
-      >
-        This is Profile Screen
-      </Text>
+    <View >
+      <ProfileHeader
+        onPressPlace={() => console.log('testing')}
+        city='Huetamo'
+        country='Michoacán'
+        name='Rogelio Portillo'
+      />
+      <View style={styles.containerSocialMedia}>
+        <ProfileSocialMedia
+          onPressIcon={() => console.log('social media')}
+          link='http://facebook.com'
+          typeIcon='facebook'
+        />
+        <ProfileSocialMedia
+          onPressIcon={() => console.log('social media')}
+          link='http://facebook.com'
+          typeIcon='youtube'
+        />
+        <ProfileSocialMedia
+          onPressIcon={() => console.log('social media')}
+          link='http://facebook.com'
+          typeIcon='instagram'
+        />
+      </View>
     </View>
   )
 }
